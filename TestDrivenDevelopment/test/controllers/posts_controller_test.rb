@@ -5,4 +5,8 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     get posts_url
     assert_response :success
   end
+  test "should get new" do
+    get "/posts/new"
+    assert_response :success
+  end
 end
